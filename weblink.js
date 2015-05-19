@@ -3,7 +3,7 @@
 (function () {
     "use strict";
     if(WinJS) {
-    var page = WinJS.UI.Pages.define("/html/weblink.html", {
+    var page = WinJS.UI.Pages.define("/index.html", {
         ready: function (element, options) {
             var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
             dataTransferManager.addEventListener("datarequested", dataRequested);
