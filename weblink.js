@@ -2,6 +2,7 @@
 
 (function () {
     "use strict";
+    if(WinJS) {
     var page = WinJS.UI.Pages.define("/html/weblink.html", {
         ready: function (element, options) {
             var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
@@ -12,7 +13,7 @@
             var dataTransferManager = Windows.ApplicationModel.DataTransfer.DataTransferManager.getForCurrentView();
             dataTransferManager.removeEventListener("datarequested", dataRequested);
         }
-    });
+    }});
 
     function dataRequested(e) {
         var request = e.request;
