@@ -1,5 +1,6 @@
 ﻿<html>
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <title>Test LaunchUri Scenarios</title>
 </head>
 <body>
@@ -7,5 +8,7 @@
         Tap <a href="http://line.me/R/shop/detail/4608">here</a> to launch Line on a Windows Phone.
         Tap <a href="line:">line:</a> to launch Line directly using a custom scheme.
     </div>
+    <div>Your user agent is: <div id="useragentdiv"></div></div>
+    $('#useragentdiv').val(navigator.userAgent);
 </body>
 </html>
